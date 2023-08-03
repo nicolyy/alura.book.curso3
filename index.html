@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <title>Alura Book</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container-botao">
+            <label for="menu">
+                <span class="cabecalho-menu-hamburguer  container-imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu-titulo">Categorias</li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Programação</a>
+                </li>
+
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Front-End</a>
+                </li>
+
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Infraestrutura</a>
+                </li>
+
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Bussiness</a>
+                </li>
+
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Design & UX</a>
+                </li>
+            </ul>
+
+            <img src="img/logo.svg" alt="Logo da Alurabooks" class="container-imagem">
+        </div>
+
+        <div class="container">
+            <a href="#"><img src="img/coracao.svg" alt="Meus Favoritos" class="container-imagem"></a>
+            <a href="#"><img src="img/sacola.svg" alt="Minhas compras" class="container-imagem"></a>
+            <a href="#"><img src="img/perfil.svg" alt="Meu Perfil" class="container-imagem"></a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="baner-titulo">Já sabe por onde começar?</h2>
+        <p class="banner-texto">Encontre na nossa estante o que precisa para o seu
+            desenvolvimento</p>
+        <input type="search" class="banner-pesquisa" placeholder="Qual será sua proxima leitura">
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel-titulo">Novos Lançamentos</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/book1.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/book2.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/book3.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/book4.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/book5.svg" alt=""></div>
+                <div class="swiper-slide"><img src="img/book6.svg" alt=""></div>
+            </div>
+
+             <!-- If we need navigation buttons -->
+             <div class="swiper-button-prev"></div>
+             <div class="swiper-button-next"></div>
+
+
+
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 3,
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>
