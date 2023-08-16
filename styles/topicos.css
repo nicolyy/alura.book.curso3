@@ -28,3 +28,18 @@
     font-size: 14px;
     font-weight: 700;
 }
+@media screen and (min-width: 1024px) {
+    .tÃ³picos__titulo {
+        font-size: 24px;
+    }
+
+    .tÃ³picos__link {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .tÃ³picos {
+        padding: 3em 30vw;
+    }
+}
